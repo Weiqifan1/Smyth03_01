@@ -7,7 +7,8 @@
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         tools:showIn="@layout/activity_main"
-        tools:context=".MainActivity">
+        tools:context=".MainActivity"
+        android:background="#ff2438">
 
     <TextView
             android:layout_width="wrap_content"
@@ -16,6 +17,22 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent" android:id="@+id/textView"/>
+    <Button
+            android:text="@string/convert_string"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/button" android:layout_marginTop="53dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:id="@+id/dollarText" android:layout_marginBottom="80dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView" android:hint="@string/dollars_hint"
+            android:autofillHints=""/>
 
 </android.support.constraint.ConstraintLayout>
