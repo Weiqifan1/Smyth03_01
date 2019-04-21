@@ -74,12 +74,16 @@ class MainActivity : AppCompatActivity() {
         Log.i(TAG, "onDestroy")
     }
 
-    @SuppressLint("MissingSuperCall")
-    override fun onSaveInstanceState(savedInstanceState: Bundle?) {
+    override fun onSaveInstanceState(outState: Bundle?) {
+        super.onSaveInstanceState(outState)
+        Log.i(TAG, "onSaveInstanceState")
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle?) {
         super.onRestoreInstanceState(savedInstanceState)
         Log.i(TAG, "onRestoreInstanceState")
-
     }
+    
 
 
 }
