@@ -9,6 +9,7 @@ import android.view.MenuItem
 import android.annotation.SuppressLint
 import android.os.PersistableBundle
 import android.util.Log
+import android.view.View
 
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
@@ -22,6 +23,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
+        myButton.setOnClickListener{
+            textView1.text = "Button cliked"
+        }
 
         fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
