@@ -75,28 +75,24 @@ class MainActivity : AppCompatActivity() {
         Log.i(TAG, "onDestroy")
     }
 
-    /*
+
     override fun onSaveInstanceState(outState: Bundle?) {
         super.onSaveInstanceState(outState)
         Log.i(TAG, "onSaveInstanceState")
-        val userText = editText.text //4774/22642 el. 4747
-        outState?.putCharSequence("savedText", userText)
+        //val userText = editText.text //4774/22642 el. 4747
+        //outState?.putCharSequence("savedText", userText)
     }
-    */
 
-    /*
+
+
     override fun onRestoreInstanceState(savedInstanceState: Bundle?) {
         super.onRestoreInstanceState(savedInstanceState)
         Log.i(TAG, "onRestoreInstanceState")
-        val userText = savedInstanceState?.getCharSequence("savedText")
-        editText.setText(userText) //4788/22642
-    */
-
-
-
+        //val userText = savedInstanceState?.getCharSequence("savedText")
+        //editText.setText(userText) //4788/22642
 
     }
-    
+
 
 
 }
